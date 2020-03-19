@@ -111,3 +111,10 @@ if ! shopt -oq posix; then
 fi
 
 [[ -f "${HOME}/.bashrc.local" ]] && . "${HOME}/.bashrc.local"
+
+mkdir () {
+	case $1 in
+		(-c) command mkdir -p "$2" && cd "$2";;
+		(*) command mkdir "$@";;
+	esac
+}
