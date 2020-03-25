@@ -84,7 +84,7 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 ## extending path
-export PATH=$PATH:/sbin:/usr/sbin
+export PATH=$PATH:/sbin:/usr/sbin:~/bin
 # some more ls aliases
 #alias ll='ls -l'
 #alias la='ls -A'
